@@ -19,7 +19,7 @@ module "hks" {
 
   # Map of ssh keys that can be used to connect to the nodes.
   ssh_public_keys = {
-    my-ssh-key = "~/.ssh/id_rsa.pub"
+    my-ssh-key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDCyQLzGaS4kUL068R8xe56HEED1sjZfByqqUDvYU65/ZPMiiakjMqrEWLY60ITt/QTM8s9y7vpjMgbADeiwGUEZHvlIpBC/Zq6c/CLFn2L3qJcITKS2Km+f3LwVxYQvRvNYJjAhOtnJ/CZiaoc5VWcG+mtjAfdKjnmpTyu4c6JYh9zYCgJOMfAcYMUbxgBQR81cjN9VaiHo9btff0Bd+S5MNzGB5KBFDXA6Pg6fDie8T7bNjcAbuOpm7ig777yxWtTpZW1qFCWNAXqbWSScBx5EdAhdhuGvH6mdi1Z+0V5gDM4IORDCBhbYbwED0XlwYh4npF1c6QUJa7xNEPqfD8HNnCQvjcafuWW0OmPPYiTUt2sP/6r8AKu+9Vt2xObVjO2u8E2jt+M+cTgDrL1Q6GTT/Gs8Iwp+/wmvarl/Dintd0I1hWl7kfL4o750Jvyeg9QIlPq7LSfN7pkbnr8ubLXolcv5yjXo7U6PpkmbsJ6goD69g4xJp2budIrAO21ZDe3vAtkvlOekQ3ZqYPg7WGw939HiLuho4fB/0RLNzT7mCJYox3hIQHybNRGAPhOouXsV2/OQ702lUBJweZqHksrCI6sKUXwX5q50tw2Dl8MhsW9PtwH87ZsvsFeJ1eLmxFvT811mb3exujUdYDYyQxIn/DJwDvenftcFnMy6UJM/w== msc@dell-u24"
   }
 
   hcloud_token = local.hcloud_token
