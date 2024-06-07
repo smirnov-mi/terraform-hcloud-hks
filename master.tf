@@ -19,7 +19,9 @@ resource "hcloud_server" "master" {
   }
 
   depends_on = [
-    hcloud_network_subnet.master
+    hcloud_network_subnet.master,
+    hcloud_ssh_key.keys,
+    tls_private_key.ssh.private_key_openssh
   ]
 }
 
