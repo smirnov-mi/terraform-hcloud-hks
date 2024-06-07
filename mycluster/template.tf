@@ -19,7 +19,7 @@ module "hks" {
 
   # Map of ssh keys that can be used to connect to the nodes.
   ssh_public_keys = {
-    my-ssh-key = ""
+    my-ssh-key = "~/.ssh/id_rsa.pub"
   }
 
   hcloud_token = local.hcloud_token
