@@ -1,6 +1,6 @@
 resource "hcloud_server" "master" {
   name         = "${var.prefix}-${var.master_node.name}"
-  image        = "rocky-8.3"
+  image        = "ubuntu-22.04"
   server_type  = var.master_node.server_type
   ssh_keys     = [for key in values(hcloud_ssh_key.keys) : key.id]
   location     = var.master_node.location

@@ -2,7 +2,7 @@ resource "hcloud_server" "agents" {
   for_each = local.agent_nodes
 
   name         = "${var.prefix}-${each.key}"
-  image        = "rocky-8.3"
+  image        = "ubuntu-22.04"
   server_type  = each.value.server_type
   ssh_keys     = [for key in values(hcloud_ssh_key.keys) : key.id]
   location     = each.value.location
