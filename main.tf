@@ -3,8 +3,8 @@ provider "hcloud" {
 }
 
 resource "tls_private_key" "ssh" {
-  algorithm   = "ECDSA"
-  ecdsa_curve = "P521"
+  algorithm   = "ED25519"
+  #ecdsa_curve = "P521"
 }
 
 resource "hcloud_ssh_key" "keys" {
